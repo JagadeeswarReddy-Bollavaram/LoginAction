@@ -3,11 +3,8 @@ import 'dart:convert';
 import 'package:crypto/crypto.dart';
 
 class EncryptionHelper {
-// Ensure the key length is appropriate for AES (32 bytes here for AES-256)
-  final _key = encrypt.Key.fromUtf8(
-      "my32lengthsupersecretnooneknows1"); // Make sure the key is of valid length
-  final _iv = encrypt.IV
-      .fromUtf8("16bytesivforaes"); // IV must also be the correct length
+  final _key = encrypt.Key.fromUtf8("my32lengthsupersecretnooneknows1");
+  final _iv = encrypt.IV.fromUtf8("16bytesivforaes");
 
 // Encryption method
   String encryptText(String text) {
@@ -27,8 +24,8 @@ class EncryptionHelper {
 
 class HashHelper {
   String hashPassword(String password) {
-    final bytes = utf8.encode(password); // Convert password to UTF-8
-    final digest = sha256.convert(bytes); // Hash using SHA-256
+    final bytes = utf8.encode(password);
+    final digest = sha256.convert(bytes);
     return digest.toString();
   }
 }

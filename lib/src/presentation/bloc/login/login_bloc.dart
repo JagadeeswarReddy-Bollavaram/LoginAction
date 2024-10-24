@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:travalizer/login/bloc/login_events.dart';
-import 'package:travalizer/login/bloc/login_states.dart';
+import 'package:travalizer/src/presentation/bloc/login/login_events.dart';
+import 'package:travalizer/src/presentation/bloc/login/login_states.dart';
 
 class LoginBloc extends Bloc<LoginEvent, LoginState> {
   LoginBloc() : super(LoginInitial()) {

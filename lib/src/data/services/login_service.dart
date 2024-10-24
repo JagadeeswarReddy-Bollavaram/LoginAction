@@ -1,6 +1,5 @@
 import 'package:hive/hive.dart';
-
-import '../utils.dart';
+import 'package:travalizer/src/data/services/utils.dart';
 
 class HiveStorageService {
   final EncryptionHelper _encryptionHelper = EncryptionHelper();

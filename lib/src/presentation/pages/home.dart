@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../login/login_service.dart';
+import '../../data/services/login_service.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({super.key});
