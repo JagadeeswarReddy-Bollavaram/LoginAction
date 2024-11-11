@@ -1,4 +1,4 @@
-# travalizer
+# FlutterCleanArchitecture with LoginPage
 
 A new Flutter project.
 
